@@ -1,11 +1,13 @@
 package com.deep.learn.docker.dockerapp
 
+import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class DockerAppApplication
-
-fun main(args: Array<String>) {
-    runApplication<DockerAppApplication>(*args)
+class DockerAppApplication {
+    fun main(args: Array<String>) {
+        SpringApplication.run(DockerAppApplication::class.java, *args)
+    }
 }
+
+
